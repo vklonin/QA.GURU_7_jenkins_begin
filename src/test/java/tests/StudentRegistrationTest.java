@@ -28,7 +28,5 @@ public class StudentRegistrationTest extends TestBase {
         step("Input city" , () -> studentRegPage.inputCity(testData.city));
         step("Submit form" , studentRegPage::clickSubmit);
         step("Check results" , () -> studentRegPage.checkOutcome(testData));
-
-        
     }
 }
